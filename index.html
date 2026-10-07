@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Resume & portfolio of Natthakit Suksawat — Videographer & Video Editor." />
+  <meta property="og:title" content="Natthakit Suksawat | Videographer & Video Editor" />
+  <meta property="og:description" content="Senior videographer and video editor with experience across production, lighting, shooting and post-production." />
+  <meta property="og:image" content="assets/profile.png" />
+  <title>Natthakit Suksawat | Videographer & Video Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c0f;
+      --panel:#12141a;
+      --panel2:#171a21;
+      --text:#f5f6f7;
+      --muted:#aeb4bf;
+      --line:#2a2f39;
+      --accent:#d9ff66;
+      --accent2:#94ffbd;
+      --shadow:0 20px 60px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at top right,rgba(217,255,102,.08),transparent 26%),var(--bg);color:var(--text);font-family:Inter,"Noto Sans Thai",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1160px,calc(100% - 32px));margin:auto}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(11,12,15,.8);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .navin{height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:.04em}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+    .navlinks a:hover{color:var(--text)}
+    .hero{padding:72px 0 54px}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 24px rgba(217,255,102,.7)}
+    h1{font-size:clamp(48px,7vw,90px);line-height:.98;margin:18px 0 22px;letter-spacing:-.055em}
+    .role{font-size:clamp(20px,2.5vw,34px);font-weight:600;color:#d8dce3;margin-bottom:18px}
+    .intro{color:var(--muted);font-size:18px;max-width:720px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:14px;background:var(--panel)}
+    .btn.primary{background:var(--accent);color:#0b0c0f;border-color:var(--accent)}
+    .btn:hover{transform:translateY(-1px)}
+    .hero-card{position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);min-height:600px;background:#1b1d22}
+    .hero-card img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center 32%;filter:saturate(.9) contrast(1.03)}
+    .hero-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(11,12,15,.9) 100%)}
+    .photo-tag{position:absolute;left:22px;bottom:20px;z-index:2;background:rgba(11,12,15,.72);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);padding:12px 14px;border-radius:14px;font-size:13px;color:#dce1e7}
+    section{padding:62px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}
+    .section-kicker{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:800}
+    h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.04em;margin:6px 0 0}
+    .muted{color:var(--muted)}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:20px;padding:24px}
+    .about-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+    .mini{padding:16px;border-radius:14px;background:#0f1116;border:1px solid #252a33}
+    .mini b{display:block;font-size:12px;color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:.07em}
+    .timeline{display:grid;gap:14px}
+    .job{display:grid;grid-template-columns:170px 1fr;gap:22px;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}
+    .job .year{font-weight:800;color:var(--accent)}
+    .job h3{margin:0 0 5px;font-size:20px}
+    .job p{margin:0;color:var(--muted)}
+    .skills{display:grid;gap:18px}
+    .skill-row{display:grid;grid-template-columns:160px 1fr 48px;gap:16px;align-items:center}
+    .bar{height:10px;background:#272c35;border-radius:999px;overflow:hidden}
+    .bar span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:inherit}
+    .chips{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{padding:10px 12px;border-radius:999px;background:#14171d;border:1px solid var(--line);font-size:14px;color:#d7dce3}
+    .portfolio{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .work{padding:22px;border-radius:18px;background:var(--panel);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .work:hover{border-color:#49515f;background:#161a20}
+    .work .num{font-weight:800;color:var(--accent);font-size:12px;letter-spacing:.1em}
+    .work .title{font-weight:700;margin-top:2px}.arrow{font-size:22px;color:var(--muted)}
+    footer{padding:44px 0 70px;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+    @media (max-width:850px){
+      .navlinks{display:none}.hero{padding-top:42px}.hero-grid,.grid2{grid-template-columns:1fr}.hero-card{min-height:520px;order:-1}.job{grid-template-columns:1fr;gap:8px}.portfolio{grid-template-columns:1fr}.skill-row{grid-template-columns:120px 1fr 42px}.about-list{grid-template-columns:1fr}}
+    @media (max-width:520px){.wrap{width:min(100% - 22px,1160px)}.hero-card{min-height:440px;border-radius:22px}h1{font-size:50px}.role{font-size:22px}.skill-row{grid-template-columns:1fr 44px}.skill-row .bar{grid-column:1/3}.card{padding:18px}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap navin">
+      <div class="brand">NATTHAKIT<span>.</span></div>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span>Available for creative opportunities</div>
+          <h1>Natthakit<br>Suksawat</h1>
+          <div class="role">Videographer &amp; Video Editor</div>
+          <p class="intro">Senior-level video production professional with experience in videography, video editing, lighting, visual composition, production equipment and end-to-end post-production.</p>
+          <div class="cta">
+            <a class="btn primary" href="#portfolio">View Portfolio</a>
+            <a class="btn" href="mailto:tongfaro@gmail.com">Email Me</a>
+            <a class="btn" href="tel:+66832576471">Call 083-257-6471</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/profile.png" alt="Portrait of Natthakit Suksawat" />
+          <div class="photo-tag">Bangkok, Thailand · Video Production</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap grid2">
+        <div>
+          <div class="section-kicker">Profile</div>
+          <h2>About me</h2>
+          <p class="muted">ช่างภาพวิดีโอและนักตัดต่อที่มีประสบการณ์ทำงานในสาย Production มากกว่า 10 ปี ตั้งแต่งานถ่ายทำ การจัดแสง การจัดองค์ประกอบภาพ การเตรียมอุปกรณ์ ไปจนถึงการตัดต่อและงาน Post-production ระดับพื้นฐานถึงระดับสูง</p>
+        </div>
+        <div class="card">
+          <div class="about-list">
+            <div class="mini"><b>Date of birth</b>27 July 1992</div>
+            <div class="mini"><b>Age</b>34 years</div>
+            <div class="mini"><b>Phone</b><a href="tel:+66832576471">083-257-6471</a></div>
+            <div class="mini"><b>Email</b><a href="mailto:tongfaro@gmail.com">tongfaro@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head"><div><div class="section-kicker">Career</div><h2>Experience</h2></div><div class="muted">2014 — Present</div></div>
+        <div class="timeline">
+          <div class="job"><div class="year">2020 — Present</div><div><h3>บริษัท บีสตาร์วัน จำกัด</h3><p>Senior Videographer &amp; Video Editor</p></div></div>
+          <div class="job"><div class="year">2019 — 2020</div><div><h3>บริษัท เวิร์ลสตาร์ จำกัด</h3><p>Videographer &amp; Video Editor</p></div></div>
+          <div class="job"><div class="year">2016 — 2017</div><div><h3>NewTV 18</h3><p>Video Editor</p></div></div>
+          <div class="job"><div class="year">2014 — 2016</div><div><h3>บริษัท มิคเซลล์มีเดียร์ จำกัด</h3><p>Photographer</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap grid2">
+        <div class="card">
+          <div class="section-kicker">Software</div>
+          <h2 style="font-size:34px;margin-bottom:24px">Tools</h2>
+          <div class="skills">
+            <div class="skill-row"><div>Premiere Pro</div><div class="bar"><span style="width:95%"></span></div><b>95%</b></div>
+            <div class="skill-row"><div>After Effects</div><div class="bar"><span style="width:70%"></span></div><b>70%</b></div>
+            <div class="skill-row"><div>Photoshop</div><div class="bar"><span style="width:50%"></span></div><b>50%</b></div>
+            <div class="skill-row"><div>Illustrator</div><div class="bar"><span style="width:50%"></span></div><b>50%</b></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="section-kicker">Core strengths</div>
+          <h2 style="font-size:34px;margin-bottom:24px">Production skills</h2>
+          <div class="chips">
+            <span class="chip">DSLR &amp; Video Cameras</span><span class="chip">Visual Composition</span><span class="chip">Lighting Setup</span><span class="chip">Production Equipment</span><span class="chip">Advanced Video Editing</span><span class="chip">Shoot Preparation</span><span class="chip">Teamwork</span><span class="chip">Persistence &amp; Reliability</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="wrap">
+        <div class="section-head"><div><div class="section-kicker">Selected work</div><h2>Portfolio links</h2></div><div class="muted">Google Drive</div></div>
+        <div class="portfolio">
+          <a class="work" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1857dIx66D4qQQcnKbW9DSF6EOdofV13W?usp=drive_link"><div><div class="num">PORTFOLIO 01</div><div class="title">Video &amp; Production Work</div></div><div class="arrow">↗</div></a>
+          <a class="work" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1mRSbMuF2qPEvdlMIJX_Eojq78tK-t01w?usp=drive_link"><div><div class="num">PORTFOLIO 02</div><div class="title">Selected Projects</div></div><div class="arrow">↗</div></a>
+          <a class="work" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/14dN2iPYz7nw2um-ZCqPxT7yBi7A_qFbE?usp=drive_link"><div><div class="num">PORTFOLIO 03</div><div class="title">Videography Collection</div></div><div class="arrow">↗</div></a>
+          <a class="work" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1yXd4q2nKfBL_Ksp0F-MJB16C_Mcd3jrI/view"><div><div class="num">PORTFOLIO 04</div><div class="title">Featured Work</div></div><div class="arrow">↗</div></a>
+          <a class="work" target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1RoEXSKp41ZsymXuqZpFuv8n9jXTQ55Ec"><div><div class="num">PORTFOLIO 05</div><div class="title">Additional Work</div></div><div class="arrow">↗</div></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap card" style="padding:34px">
+        <div class="section-kicker">Contact</div>
+        <h2>Let’s work together.</h2>
+        <p class="muted">For videography, editing, production or creative opportunities, contact me directly.</p>
+        <div class="cta"><a class="btn primary" href="mailto:tongfaro@gmail.com">tongfaro@gmail.com</a><a class="btn" href="tel:+66832576471">083-257-6471</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row"><div>© 2026 Natthakit Suksawat</div><div>Videographer &amp; Video Editor</div></div>
+  </footer>
+</body>
+</html>
